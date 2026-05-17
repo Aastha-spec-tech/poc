@@ -65,3 +65,16 @@ EXISTING DOC:
 {existing_doc}
 """
 }
+
+REFINEMENT_PROMPT = """You are a documentation refinement agent for krkn-chaos.
+You are given the EXISTING DOC and a USER FEEDBACK comment.
+Rewrite the EXISTING DOC to satisfy the USER FEEDBACK.
+Preserve all formatting, frontmatter, and standard table structures unless explicitly asked to modify them.
+Output ONLY the complete updated documentation content in Markdown format.
+
+EXISTING DOC:
+{existing_doc}
+
+USER FEEDBACK:
+{feedback}
+"""
